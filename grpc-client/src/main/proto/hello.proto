@@ -8,7 +8,7 @@ message HelloRequest {
 }
 
 message HelloResponse {
-  string greeting = 1;
+  string message = 1;
 }
 
 service HelloService {

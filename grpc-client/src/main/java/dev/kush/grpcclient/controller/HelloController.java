@@ -20,7 +20,7 @@ public class HelloController {
         try {
             return helloServiceBlockingStub.greeting(HelloRequest.newBuilder()
                     .setName(name)
-                    .build()).getGreeting();
+                    .build()).getMessage();
         } catch (Exception e) {
             e.printStackTrace();
             return "Sorry, something went wrong!";
