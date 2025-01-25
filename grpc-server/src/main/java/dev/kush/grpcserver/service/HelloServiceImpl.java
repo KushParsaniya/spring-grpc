@@ -13,7 +13,7 @@ public class HelloServiceImpl extends HelloServiceGrpc.HelloServiceImplBase {
     @Override
     public void greeting(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
         String greeting = "Hello " + request.getName();
-        HelloResponse response = HelloResponse.newBuilder().setGreeting(greeting).build();
+        HelloResponse response = HelloResponse.newBuilder().setMessage(greeting).build();
         responseObserver.onNext(response);
         responseObserver.onCompleted();
     }
