@@ -48,7 +48,7 @@ For a detailed walkthrough, check out my Medium article:
 5. **Test the Application**:
    Use `curl` to send a request to the gRPC client:
    ```bash
-   curl -X GET http://localhost:8080/hello -H "Content-Type: text/plain" -d "Alice"
+   curl -X GET http://localhost:8080/hello -H "Content-Type: text/plain" -d "Kush"
    ```
 
    **Expected Output**:
